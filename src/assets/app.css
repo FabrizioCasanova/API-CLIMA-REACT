@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+.main {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  padding-top: 3.5rem;
+  padding-bottom: 1.5rem
+}
+
+.titule {
+  display: inline-block;
+  position: relative;
+  font-size: 38px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.titule::after,
+.titule::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2%;
+  background-color: black;
+  top: 0.6em;
+}
+
+.titule::before {
+  left: -140px;
+}
+
+.titule::after {
+  right: -140px;
+}
+
+.form-control {
+  background-color: #ffffff28;
+  font-style: italic;
+  margin-right: 1%;
+}
+
+.form-control::placeholder {
+  color: black;
+  font-style: italic;
+}
+
+.form-control:hover {
+  color: black;
+  outline-color: initial;
+  border-color: yellow;
+  box-shadow: rgba(238, 255, 0, 0.969) 0px 0px 0px 0.1rem;
+}
+
+.form-control:focus {
+  color: black;
+  background-color: #fff;
+  outline-color: initial;
+  border-color: yellow;
+  box-shadow: rgba(238, 255, 0, 0.969) 0px 0px 0px 0.1rem;
+}
+
+.button-search {
+  margin-left: 3%;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 7px 27px;
+  color: yellow;
+  font-size: 19px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+}
+
+.main::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 101%;
+  width: 101%;
+  background: url(../images/Fondo-Api-clima.png);
+  background-size: cover;
+  z-index: -2;
+}
+
+.App {
+  text-align: center;
+  min-height: 100%;
+}
+
+.input-group {
+  width: 60%;
+  margin: 0 auto;
+  flex: nowrap !important;
+}
+
+.container {
+  margin-top: 3rem;
+}
+
+.container-data {
+  display: flex;
+  justify-content: center;
+  margin-right: 1%;
+  margin-top: 1rem !important;
+}
+
+.card {
+  max-width: 60%;
+  margin: 0 auto;
+  background-color: #0c0c0c94;
+}
+
+.card-title {
+  position: absolute;
+  font-size: 23px;
+  padding: 20px;
+}
+
+.card-date {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 60px;
+}
+
+.card-temp {
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 270px;
+  font-size: 47px;
+}
+
+.card-desc {
+  display: flex;
+  position: absolute;
+  padding-left: 131px;
+  margin-top: 253px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noData {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 4%;
+  margin-right: 3%;
+  font-style: italic;
+  font-family: math;
+  letter-spacing: 3px;
+  -webkit-text-stroke: 0.1px;
+  -webkit-text-stroke-color: #ffffff8a;
+  color: black;
+}
+
+.image-description {
+  height: 85px;
+}
+
+.col {
+  text-align: center;
+}
+
+.col-md-4 {
+  display: flex;
+}
+
+.col-md-8 {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 10%;
+  gap: 19px;
+}
+
+.row {
+  justify-content: center;
+}
+
+/* Estilos Responsive */
+
+
+/* Apartado con datos */
+
+@media (max-width: 1400px) {
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-temp {
+    font-size: 35px;
+    margin-left: 10px;
+  }
+
+  .card-desc {
+    padding-left: 123px;
+    margin-top: 252px;
+  }
+
+  .image-description {
+    height: 80px;
+  }
+}
+
+/* Apartado con datos */
+
+@media (max-width: 1200px) {
+
+  .card-title {
+    font-size: 17px;
+  }
+
+  .card-date {
+    font-size: 15px;
+  }
+
+  .card-temp {
+    font-size: 30px;
+  }
+
+  .card-desc {
+    padding-left: 105px;
+    margin-top: 253px;
+  }
+
+  .image-description {
+    height: 73px;
+  }
+
+}
+
+/* Apartado con datos */
+
+@media (max-width: 992px) {
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .card-date {
+    font-size: 12px;
+  }
+
+  .card-temp {
+    font-size: 22px;
+    margin-left: 0;
+    margin-top: 261px;
+  }
+
+  .card-desc {
+    padding-left: 74px;
+    margin-top: 242px;
+  }
+
+  .col {
+    font-size: 13px;
+  }
+
+  .card-text {
+    font-size: 17px;
+  }
+
+  .image-description {
+    height: 61px;
+  }
+}
+
+/* Apartado con datos */
+
+@media (max-width: 767px) {
+
+  .navbar {
+    padding-top: 2.7rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .container {
+    max-width: 665px;
+  }
+
+  .container-data {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .row {
+    margin-top: 0;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 0rem;
+  }
+
+  .card-title {
+    font-size: 21px;
+  }
+
+  .card-date {
+    font-size: 16px;
+  }
+
+  .card-temp {
+    font-size: 32px;
+    margin-top: 131px;
+    margin-left: 26px;
+  }
+
+  .card-desc {
+    margin-top: 110px;
+    padding-left: 179px;
+  }
+
+  .card-desc img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+  .col-md-4 {
+    max-width: 384px;
+  }
+
+  .col-md-4 img {
+    max-height: 190px;
+    object-fit: cover;
+  }
+
+  .col-md-8 {
+    margin-top: 7px;
+  }
+
+  .mt-4 {
+    margin-top: 0.3 !important;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .col {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .description img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .temp {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 610px) {
+  .navbar {
+    padding-bottom: 0rem;
+  }
+
+}
+
+/* Apartado con datos */
+
+@media (max-width: 555px) {
+  .card-temp {
+    font-size: 32px;
+
+  }
+
+  .col-md-4 img {
+    max-height: 187px;
+    object-fit: cover;
+  }
+
+  .col-md-8 {
+    margin-top: 0;
+  }
+
+  .mt-4 {
+    margin-top: 5px !important;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .description img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .temp {
+    font-size: 12px;
+  }
+}
+
+/* Apartado sin datos */
+
+@media (max-width: 780px) {
+
+  .svg-image {
+    width: 750px;
+    height: 520px;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .titule {
+    font-size: 31px;
+  }
+
+  .titule::after,
+  .titule::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2%;
+    background-color: black;
+    top: 0.6em;
+  }
+
+  .input-group {
+    width: 70%;
+  }
+
+  .button-gradiant {
+    font-size: 16px;
+  }
+
+  .titule::before {
+    left: -120px;
+  }
+
+  .titule::after {
+    right: -120px;
+  }
+
+  .svg-image {
+    width: 576px;
+    height: 546px;
+
+  }
+
+  /* Apartado sin datos */
+
+  @media (max-width: 575px) {
+
+    .titule {
+      font-size: 27px;
+    }
+
+    .titule::after,
+    .titule::before {
+      content: '';
+      position: absolute;
+      width: 90px;
+      height: 2%;
+      background-color: black;
+      top: 0.6em;
+    }
+
+    .input-group {
+      width: 70%;
+    }
+
+    .button-gradiant {
+      font-size: 15px;
+    }
+
+    .titule::before {
+      left: -110px;
+    }
+
+    .titule::after {
+      right: -110px;
+    }
+
+    .form-control::placeholder {
+      color: black;
+      font-style: italic;
+      font-size: 0.96rem;
+    }
+
+    .svg-image {
+      width: 480px;
+      height: 480px;
+
+    }
+  }
+
+}
