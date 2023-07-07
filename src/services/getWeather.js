@@ -7,7 +7,7 @@ export const getCityWeather = async (city) => {
 
         const optionsRequest = {
             method: 'GET',
-            url: process.env.URL_WEATHER,
+            url: 'https://api.openweathermap.org/data/2.5/weather',
             params: {
                 q: city,
                 appid: process.env.OPENWEATHER_KEY,

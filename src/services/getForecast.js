@@ -4,7 +4,7 @@ export const getCityForecast = async (city) => {
 
     const optionsRequest = {
         method: 'GET',
-        url: process.env.URL_FORECAST,
+        url: 'https://api.openweathermap.org/data/2.5/weather',
         params: {
             q: city,
             appid: process.env.OPENWEATHER_KEY,
