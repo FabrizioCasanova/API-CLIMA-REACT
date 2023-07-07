@@ -7,10 +7,10 @@ export const getCityWeather = async (city) => {
 
         const optionsRequest = {
             method: 'GET',
-            url: import.meta.env.VITE_URL_WEATHER,
+            url: process.env.VITE_URL_WEATHER,
             params: {
                 q: city,
-                appid: import.meta.env.VITE_OPENWEATHER_KEY,
+                appid: process.env.VITE_OPENWEATHER_KEY,
                 units: "metric",
                 lang: "es"
             }
