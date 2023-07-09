@@ -9,6 +9,8 @@ const States = () => {
   const [cityWeather, setCityWeather] = useState(null)
   const [cityForecast, setCityForecast] = useState(null)
 
+  console.log(cityWeather)
+
   return (
 
     <>
