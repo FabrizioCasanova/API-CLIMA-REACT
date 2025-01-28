@@ -14,7 +14,8 @@
 }
 
 .main::after{
-  content: url(../images/Fondo-Api-clima.png);
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/174653-oceano_fotos-oceano-la_fundacion_del_oceano-agua-ambiente-2560x1440.jpg);
   position: fixed;
   top: 0;
   left: 0;
@@ -29,6 +30,7 @@
 }
 
 .titule {
+  color: white;
   display: inline-block;
   position: relative;
   font-size: 38px;
@@ -41,7 +43,7 @@
   position: absolute;
   width: 120px;
   height: 2%;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   top: 0.6em;
 }
 
